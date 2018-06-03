@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ReadWorld" Class="BooksDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=ReadWorld;Persist Security Info=True;User ID=sa" SettingsObjectName="Read_World.Properties.Settings" SettingsPropertyName="ReadWorldConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Books" Member="Books">
+    <Type Name="Books">
+      <Column Name="BID" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BCover" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BName" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="BAuthor" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="BPubDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="BPages" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
